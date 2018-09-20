@@ -13,12 +13,14 @@ $(document).ready(function() {
     var resultSum = add(answer1, answer2, answer3, answer4, answer5);
     // resultSum max 15, min 3.  3-7, 8-11, 12-15
 
-    if (resultSum > 8) {
+    if (resultSum < 8) {
     $('#destination1').show();
-  } else if (7 < resultSum && resultSum < 12) {
+  } else if ( 7 < resultSum&&resultSum < 12) {
     $('#destination2').show();
   } else {
     $('#destination3').show();
+  }
+    $('#selector').hide();
 
 		event.preventDefault();
   });
