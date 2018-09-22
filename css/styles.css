@@ -1,3 +1,11 @@
+body {
+  background-color: lightblue;
+}
+
 #destination1, #destination2, #destination3 {
   display: none;
+}
+
+#header {
+  text-align: center;
 }

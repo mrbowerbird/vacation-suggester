@@ -11,7 +11,7 @@ $(document).ready(function() {
     var answer5 = parseInt($("input:radio[name=fifth-input]:checked").val());
 
     var resultSum = add(answer1, answer2, answer3, answer4, answer5);
-    // resultSum max 15, min 3.  3-7, 8-11, 12-15
+    // resultSum max 15, min 5.  5-7, 8-11, 12-15
 
     if (resultSum < 8) {
     $('#destination1').show();
@@ -21,7 +21,6 @@ $(document).ready(function() {
     $('#destination3').show();
   }
     $('#selector').hide();
-
 		event.preventDefault();
   });
 });
