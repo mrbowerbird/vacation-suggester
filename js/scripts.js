@@ -14,11 +14,13 @@ $(document).ready(function() {
     // resultSum max 15, min 5.  5-7, 8-11, 12-15
 
     if (resultSum < 8) {
-    $('#destination1').show();
-  } else if ( 7 < resultSum&&resultSum < 12) {
-    $('#destination2').show();
+    $('#destination1').fadeIn();
+  } else if (7 < resultSum&&resultSum < 12) {
+    $('#destination2').fadeIn();
+	} else if (answer5 === 1) {
+		$('#destination2').fadeIn();
   } else {
-    $('#destination3').show();
+    $('#destination3').fadeIn();
   }
     $('#selector').hide();
 		event.preventDefault();

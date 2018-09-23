@@ -1,5 +1,41 @@
 body {
-  background-color: lightblue;
+    background-image: url("../img/bigplane.jpg");
+    height: 100%;
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: lightblue;
+    background-attachment: fixed;
+}
+
+.destinations {
+  text-align: center;
+}
+
+.destinations img {
+  max-height: 500px;
+  max-width: 650px;
+  object-fit: contain;
+}
+
+.destinations .col-md-5 {
+  padding-top: 100px;
+}
+
+.destinations .col-md-7 {
+  padding-top: 12px;
+  padding-bottom: 10px;
+}
+
+.destinations button {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.destinations h2 {
+  margin-top: 0px;
+  margin-bottom: 15px;
+  text-emphasis: bold;
 }
 
 #destination1, #destination2, #destination3 {
@@ -8,4 +44,13 @@ body {
 
 #header {
   text-align: center;
+}
+
+#whereButton {
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  padding: 10px;
+  border-style: solid;
+  border-color: gray;
 }
